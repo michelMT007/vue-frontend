@@ -18,10 +18,10 @@
         <input type="" v-model="telefone"><br>
         
         <label for="">Deseja receber novidades no seu email?</label> <br>
-        <input type="radio" for="" value="SIM" v-model="novidades">SIM
-        <input type="radio" for="" v-model="NÃO" v-mode="novidades">NÃO  <br>
+        <input type="radio" value="SIM" v-model="novidades">SIM
+        <input type="radio"    value="NÃO" v-model="novidades">NÃO  <br>
 
-        <label for="">Interesses em Esportes</label>
+        <label for="">Interesses em Esportes</label><br>
         <input type="checkbox" value="Futebol" v-model="interesses" >Futebol <br>
         <input type="checkbox" value="Volei" v-model="interesses" >Volei <br>
         <input type="checkbox" value="F1" v-model="interesses" >F1 <br>
@@ -35,9 +35,12 @@
             <option value="por acaso navegando na web">por acaso navegando na web</option>
             <option value="Redes Sociais">Redes Sociais</option>           
         </select>
-
+        <br>
         <button>Enviar Dados</button><br>
-
+        <br>
+        <hr> 
+        <br>
+        <br>
         Nome:{{nome}} <br>
         Telefone:{{telefone}} <br>
         Novidades:{{novidades}} <br>
