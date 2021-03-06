@@ -9,24 +9,15 @@
 <body>
     <div id="app">
         <h1>{{titulo}}</h1>
-        <ul>
-            <li v-for="item in linguagens"> {{ item.nome }}</li>
-        </ul>
+        <img v-bind:src="'https://pt.wikipedia.org/wiki/Ayrton_Senna#/media/Ficheiro:Ayrton_Senna_9_(cropped).jpg'" v-bind:alt="'Tigrão!'">
+        
     </div>
     <script src="http://unpkg.com/vue"></script>
     <script>
         var app = new Vue({
             el: "#app",
             data:{
-                titulo: "Lista de Linguagens de programação",
-                linguagens:[
-                    {nome: "Java"},
-                    {nome: "C#"},
-                    {nome: "C++"},
-                    {nome: "Pascal"},
-                    {nome: "SQL"},
-                    {nome: "NodeJS"},
-                ]
+                titulo: "Ayrton Senna Do Brasil!!"
             
             }
         });
