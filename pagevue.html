@@ -9,14 +9,15 @@
 <body>
     <div id="app">
         <h1>{{titulo}}</h1>
-        <img v-bind:src="'./img/tigre.jpg'" v-bind:alt="'Vue JS é legal!'">
+        <img v-bind:src="'./img/tigre.jpg'" v-bind:alt="'Tigrão!'">
+        <img v-bind:src="'./img/oncapeq.jpg'" v-bind:alt="'Oncinha Linda!'">
     </div>
     <script src="http://unpkg.com/vue"></script>
     <script>
         var app = new Vue({
             el: "#app",
             data:{
-                titulo: "Projeto 1 - Vue js  Olhos de Tigre!"
+                titulo: "Projeto 1 - Vue js  Olhos de Tigre & Onça Linda!"
             
             }
         });
