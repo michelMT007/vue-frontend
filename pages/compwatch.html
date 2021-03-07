@@ -14,9 +14,9 @@
     <p>Exemplo: app.firstName="nome"</p>
     <p>Exemplo: app.lastName="sobrenome"</p>
     <hr>
-    <div id=''> 
-        <h1>Resultado:</h1><br><br>
-        {{firstName}} {{lastName}}
+    <div id='app'> 
+        <h1>Resultado:</h1><br>
+        {{this.firstName}} {{this.lastName}}
     
     </div>
     <script>
@@ -25,7 +25,7 @@
             data: {
                 titulo:"",
                 firstName:"",
-                lastname:"",
+                lastName:"",
             },
             computed:{
                 fullName(){
@@ -37,14 +37,21 @@
                 firstName(newValue){
                     this.updateUser();
                 },
+                lastName(newValue){
+                    this.updateUser();
+                },
             },
             methods:{
                 updateUser(){  
-                    console.log('Usuário atualizado pelo console do Chrome!')
+                    console.log('----------------------------------------------');
+                    console.log('Usuário atualizado pelo console do Chrome!');
+                    console.log("Nome: "+this.firstName);
+                    console.log("Sobrenome: "+this.lastName);
+                    console.log('----------------------------------------------');
                 },
             }
         });
     </script>
     
 </body>
-</html>l
+</html>
