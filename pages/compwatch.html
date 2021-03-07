@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Computed and Watch</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <h1>Exercicio Computed e Watch</h1>
+    <p>Este exercicio exemplifica as peculiaridadesdo Watch e Computed</p><br>
+    <p>Abra o colose do navegador e edite as variaveis pelo console.</p><br>
+    <p>Exemplo: app.firstName="nome"</p>
+    <p>Exemplo: app.lastName="sobrenome"</p>
+    <hr>
+    <div id=''> 
+        <h1>Resultado:</h1><br><br>
+        {{firstName}} {{lastName}}
+    
+    </div>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data: {
+                titulo:"",
+                firstName:"",
+                lastname:"",
+            },
+            computed:{
+                fullName(){
+                    return this.firstName+' '+ this.lastName;
+                },
+            },
+
+            watch:{
+                firstName(newValue){
+                    this.updateUser();
+                },
+            },
+            methods:{
+                updateUser(){  
+                    console.log('Usuário atualizado pelo console do Chrome!')
+                },
+            }
+        });
+    </script>
+    
+</body>
+</html>l

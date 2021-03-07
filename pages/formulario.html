@@ -9,8 +9,9 @@
 <body>
     <script src="http://unpkg.com/vue"></script>
     <h1>Formulário - experiência</h1>
-
+    
     <div id="app">
+        <h2>{{titulo}}</h2> <br>
         <label for="">Nome: </label>
         <input type="text" v-model="nome"><br>
         
@@ -32,7 +33,7 @@
             <option value="">Escolha</option>
             <option value="Google">Google</option>
             <option value="TV">TV</option>
-            <option value="por acaso navegando na web">por acaso navegando na web</option>
+            <option value="por acaso navegando na web">Por acaso, navegando na web</option>
             <option value="Redes Sociais">Redes Sociais</option>           
         </select>
         <br>
